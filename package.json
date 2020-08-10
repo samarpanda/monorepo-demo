@@ -1,0 +1,29 @@
+{
+  "name": "monorepo-demo",
+  "version": "1.0.0",
+  "description": "monorepo demo application setup",
+  "main": "index.js",
+  "scripts": {
+    "start:gui": "lerna run start --scope=@via/gui --stream",
+    "start": "lerna run start --scope=@via/api",
+    "dev:api": "lerna run dev --scope=@via/api --stream",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna run build --scope=@via/gui"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "lerna": "^3.20.2",
+    "prettier": "1.19.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
+  },
+  "private": true,
+  "keywords": [],
+  "author": "er.samarpanda@gmail.com",
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+:root {
+  --bgColor: #efefef;
+  --primaryColor: #3454d1;
+  --secondaryColor: #34d1bf;
+  --textColor: #070707;
+  --errorColor: #d1345b;
+  --lightTextColor: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, -apple-system, system-ui, BlinkMacSystemFont,
+    Arial, sans-serif;
+  background: var(--bgColor);
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(0.6em + 1vw);
+  color: var(--textColor);
+}

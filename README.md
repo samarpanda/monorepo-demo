@@ -24,4 +24,4 @@ yarn start
 
 - Help in setting up a monorepo project
 - `packages/gui` - UI Application
-- `package/api` - Express nodejs API application
+- `packages/api` - Express nodejs API application

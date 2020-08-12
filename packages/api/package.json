@@ -1,5 +1,5 @@
 {
-  "name": "@via/api",
+  "name": "@md/api",
   "version": "1.0.0",
   "description": "API gateway",
   "main": "index.js",

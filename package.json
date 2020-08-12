@@ -4,11 +4,11 @@
   "description": "monorepo demo application setup",
   "main": "index.js",
   "scripts": {
-    "start:gui": "lerna run start --scope=@via/gui --stream",
-    "start": "lerna run start --scope=@via/api",
-    "dev:api": "lerna run dev --scope=@via/api --stream",
+    "start:gui": "lerna run start --scope=@md/gui --stream",
+    "start": "lerna run start --scope=@md/api",
+    "dev:api": "lerna run dev --scope=@md/api --stream",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "lerna run build --scope=@via/gui"
+    "build": "lerna run build --scope=@md/gui"
   },
   "dependencies": {},
   "devDependencies": {

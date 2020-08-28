@@ -1,0 +1,38 @@
+version: '3.2'
+
+services:
+  proxy:
+    image: traefik:v2.0
+    command:
+      - '--log.level=INFO'
+      - '--api.insecure=true'
+      - '--providers.docker'
+    ports:
+      - '3000:80'
+      - '3001:8080'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - internal
+      - default
+
+  api:
+    build:
+      context: ./packages/api
+    image: api-sever
+    env_file: docker-compose.env
+    volumes:
+      - ./packages/api/log:/var/log/api
+    ports:
+      - '3000' # Internal port of docker container
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.backend=api'
+      - 'traefik.http.routers.ssr-sever.rule=Host(`api.abc.com`)'
+    depends_on:
+      - proxy
+    networks:
+      - internal
+
+networks:
+  internal:

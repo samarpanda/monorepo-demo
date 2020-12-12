@@ -4,6 +4,7 @@
   "description": "API gateway",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --ext js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

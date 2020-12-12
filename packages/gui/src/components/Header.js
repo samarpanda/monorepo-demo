@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 
-const Header = ({ page }) => {
+const Header = () => {
   return <h2>Header</h2>;
 };
 

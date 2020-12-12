@@ -11,7 +11,7 @@ if (config.seed) {
 require('./middleware/appMiddleware')(app);
 app.use('/api', api);
 
-app.use(function(err, req, res, next) {
+app.use(function(err, __, res) {
   if (err.name === 'UnauthorizedError') {
     res.status(401).send('Invalid token');
     return;

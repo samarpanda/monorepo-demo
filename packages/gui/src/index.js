@@ -6,8 +6,6 @@ import NoMatchPage from './pages/NoMatchPage';
 import '../index.css';
 
 const Root = () => {
-  const initialValue = { candidate: {}, timeout: false, user: {} };
-
   return (
     <Router>
       <Switch>

@@ -7,10 +7,11 @@
     "start:gui": "lerna run start --scope=@md/gui --stream",
     "start": "lerna run start --scope=@md/api",
     "dev:api": "lerna run dev --scope=@md/api --stream",
-    "build": "lerna run build --scope=@md/gui",
-    "test": "scripty",
+    "greet": "scripty",
     "lint": "scripty",
-    "greet": "scripty"
+    "test": "scripty",
+    "clean": "scripty",
+    "build": "scripty"
   },
   "scripty": {
     "path": "scripts/workspace"

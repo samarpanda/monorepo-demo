@@ -7,7 +7,8 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "lint": "scripty",
-    "test": "jest"
+    "test": "scripty",
+    "build": "echo 'Not required for API package!'"
   },
   "scripty": {
     "path": "../../scripts/packages"

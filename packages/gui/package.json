@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
     "lint": "scripty",
     "start": "parcel index.html --out-dir dist",
-    "test": "jest",
+    "test": "scripty",
     "prebuild": "rm -rf dist",
-    "clean": "rimraf dist",
     "build": "parcel build index.html --out-dir dist"
   },
   "scripty": {

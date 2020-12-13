@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
+    "lint": "scripty",
     "start": "parcel index.html --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "scripty",
     "prebuild": "rm -rf dist",
     "build": "parcel build index.html --out-dir dist"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
@@ -19,9 +24,10 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-react": "7.21.5",
     "jest": "^24.9.0",
     "parcel": "^1.12.4"
   },

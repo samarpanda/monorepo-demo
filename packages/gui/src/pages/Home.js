@@ -1,9 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import Header from '../components/Header';
 
 export default function Home() {
-  const history = useHistory();
+  // const history = useHistory();
 
   return (
     <div style={{ textAlign: 'center' }}>

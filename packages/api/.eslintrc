@@ -1,0 +1,13 @@
+{
+  "extends": ["../../.eslintrc"],
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "globals": {},
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [],
+  "rules": {}
+}

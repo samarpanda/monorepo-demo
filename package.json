@@ -7,14 +7,23 @@
     "start:gui": "lerna run start --scope=@md/gui --stream",
     "start": "lerna run start --scope=@md/api",
     "dev:api": "lerna run dev --scope=@md/api --stream",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "lerna run build --scope=@md/gui"
+    "greet": "scripty",
+    "lint": "scripty",
+    "test": "scripty",
+    "clean": "scripty",
+    "build": "scripty"
+  },
+  "scripty": {
+    "path": "scripts/workspace"
   },
   "dependencies": {},
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "lerna": "^3.20.2",
-    "prettier": "1.19.1"
+    "eslint": "^7.15.0",
+    "lerna": "^3.22.1",
+    "prettier": "1.19.1",
+    "rimraf": "^3.0.2",
+    "scripty": "^2.0.0"
   },
   "workspaces": {
     "packages": [
@@ -25,5 +34,9 @@
   "private": true,
   "keywords": [],
   "author": "er.samarpanda@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "volta": {
+    "node": "14.15.1",
+    "yarn": "1.22.10"
+  }
 }

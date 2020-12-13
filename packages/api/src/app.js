@@ -1,17 +1,17 @@
 var express = require('express');
 var app = express();
-var config = require('./config');
+// var config = require('./config');
 var logger = require('./util/logger');
 var api = require('./entity/api');
 
-if (config.seed) {
-  require('./util/seed');
-}
+// if (config.seed) {
+//   require('./util/seed');
+// }
 
 require('./middleware/appMiddleware')(app);
 app.use('/api', api);
 
-app.use(function(err, req, res, next) {
+app.use(function(err, __, res) {
   if (err.name === 'UnauthorizedError') {
     res.status(401).send('Invalid token');
     return;

@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
-var config = require('./config');
+// var config = require('./config');
 var logger = require('./util/logger');
 var api = require('./entity/api');
 
-if (config.seed) {
-  require('./util/seed');
-}
+// if (config.seed) {
+//   require('./util/seed');
+// }
 
 require('./middleware/appMiddleware')(app);
 app.use('/api', api);

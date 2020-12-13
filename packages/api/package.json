@@ -4,10 +4,13 @@
   "description": "API gateway",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext js",
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "scripty",
+    "test": "jest"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
